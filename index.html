@@ -11,9 +11,7 @@
 <script>
     let Амогус = document.querySelector("img")
     let left = 0
-    let top = 0
     Амогус.style.left = left+"px"
-    Амогус.style.top = top+"px"
     document.addEventListener('keydown', function(event) {
         if (event.code == 'KeyD'){
           
@@ -23,14 +21,14 @@
           
           left-=10
           Амогус.style.left = left+"px"}
-        if (event.code == 'KeyW'){
+          if (event.code == 'KeyW'){
           
-    top+=10
-    Амогус.style.top = top+"px"}
-    if (event.code == 'KeyS'){
-          
-          top-=10
-          Амогус.style.top = top+"px"}
+          left-=10
+          Амогус.style.top = left+"px"}
+          if (event.code == 'KeyS'){
+                
+                left+=10
+                Амогус.style.top = left+"px"}
           
     })
     
