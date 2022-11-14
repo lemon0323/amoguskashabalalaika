@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img style="width: 300px;left: 50%; position: absolute;"  src="https://i.redd.it/37k67u5fgkn51.png" alt="Амогус">
+<script>
+    let Амогус = document.querySelector("img")
+    let left = 0
+    Амогус.style.left = left+"px"
+    document.addEventListener('keydown', function(event) {
+        if (event.code == 'KeyD'){
+          
+    left+=10
+    Амогус.style.left = left+"px"}
+    if (event.code == 'KeyA'){
+          
+          left-=10
+          Амогус.style.left = left+"px"}
+          if (event.code == 'KeyW'){
+          
+          left+=10
+          Амогус.style.top = left+"px"}
+          if (event.code == 'KeyS'){
+                
+                left-=10
+                Амогус.style.top = left+"px"}
+          
+    })
+    
+</script>
+</body>
+</html>
